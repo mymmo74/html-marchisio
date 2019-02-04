@@ -1,0 +1,34 @@
+
+/* 
+    Created on : 28-gen-2019, 16.47.10
+    Author     : mymmo74
+*/
+
+table{
+    border: solid 1px black;
+    margin: 10px auto;
+}
+
+td {
+    border: solid 1px black;
+}
+/*per ogni DIV, al secondo oggetto viene applicata la regola*/
+td *:nth-child(1){
+    opacity: .2;
+}
+
+/*mettendo il + dopo hover seleziona il fratello*/
+td *:nth-child(1):hover {
+    opacity: 1;
+}
+
+
+/*-----------Metodo del prof, migliore ---------*/
+table tr td img {
+    opacity: .2;
+    transition: all 3s;
+}
+
+table tr td:hover img{
+    opacity: 1;
+}

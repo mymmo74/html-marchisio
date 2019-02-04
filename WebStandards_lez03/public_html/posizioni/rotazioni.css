@@ -1,0 +1,34 @@
+
+/* 
+    Created on : 30-gen-2019, 15.49.34
+    Author     : tss
+*/
+
+div{
+    border: solid 1px blue;
+    margin: 20px;
+}
+
+
+div{
+    opacity: .1;
+    transition: all 3s;
+}
+
+div:nth-child(1):hover{
+    opacity:.9;
+    transform: rotateX(300deg);
+    border: solid 5px red;
+}
+
+div:nth-child(2):hover{
+    opacity:.9;
+    transform: rotateY(100deg);
+    border: solid 5px red;
+}
+
+div:nth-child(3):hover{
+    opacity:.9;
+    transform: rotateZ(200deg);
+    border: solid 5px red;
+}

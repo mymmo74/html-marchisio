@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Battaglia navale</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--foglio di stile incorporato-->
+        <style>
+            /*scriveremo delle regole di stile*/
+            /*Scritto come sotto si legge: "tutti i td del foglio avranno sfondo rosso e bordo come indicato"*/
+            /*Le graffe raggruppano un'insieme di proprietà*/
+            /*a sx di parentesi { vi è il selettore mentre quello contenuto dentro le parentesi graffe sono le proprietà applicate al selettore*/
+            td{
+                background-color: red;
+                border: solid 1px black;
+                width: 30px;
+                height: 30px;
+                /*per indicare lo stile del font in grassetto*/
+                font-weight: bold;
+                /*colore del testo*/
+                color: white;
+                /*per allineare nella cella il contenuto*/
+                text-align: center;
+                /*ha senso solo per il td*/
+                vertical-align: top;
+            }
+            
+            table#tabella2 tr td:nth-child(2) {
+                background-color: orange;
+                border: solid 2px aqua;
+            }
+            
+            #tabella2 td{
+                width: 50px;
+                height: 50px;
+                border: solid 1px gray;
+            }
+            table {
+                border: solid 5px brown;
+                /*Ha solo senso a livello di table*/
+                /*Indicando il valore "collapse" i bordi non vengono separati*/
+                /*automaticamente viene ignorata la proprietà border-spacing*/
+                border-collapse: collapse;
+                border-spacing: 0px 0px;
+            }
+            /*per prendere solo uno specifico tag devo indicare uno specifico attributo al tag (id)
+            questo renderà, come regola, più forte di quello generale di td */
+            td#cellaSpeciale {
+                border: dashed 3px blue;
+                font-size: 20px;
+                color:red;
+                background-color: yellow;
+                vertical-align: middle;
+                text-align: center;
+            }
+             /*si può fare anche con l'attributo classe' e poi il selettore viene indicato premettendo il punto "." */ 
+             td.giocatore1{
+                 border: solid 1px red;
+                 background-color: yellowgreen;
+             }
+             
+             td.giocatore2 {
+                 border: dotted 1px blue;
+                 background-color: goldenrod;
+             }
+            
+        </style>
+        <style>
+            table.menu{
+                border: solid 1px black;
+                border-collapse: collapse;
+            }
+            table.menu td{
+                height: 20px;
+                border: solid 1px black;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="menu">
+            <tr>
+                <td><a href="index.html" title="Torna menu tabelle">Torna menu tabelle</a></td>
+                <td><a href="../" title="Torna menu principale">Torna menu principale</a></td>
+            </tr>
+        </table>
+        <table id="car1">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>

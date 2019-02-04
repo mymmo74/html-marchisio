@@ -1,0 +1,24 @@
+/* 
+    Created on : 21-gen-2019, 16.32.07
+    Author     : tss
+*/
+
+span.evidenza {
+    background-color: yellow;
+    font-style: italic;
+    padding: 0px 0px;
+}
+
+span.evidenza:before {
+    border: solid 1px red;
+    width: 10px;
+    content: '(';
+    padding: 0px 3px 0px 10px;
+}
+
+span.evidenza:after {
+    border: solid 1px red;
+    width: 10px;
+    content: ')';
+    padding: 0px 3px 0px 10px;
+}

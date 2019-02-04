@@ -1,0 +1,46 @@
+/* 
+    Created on : 21-gen-2019, 15.27.14
+    Author     : tss
+*/
+table{
+    border: solid 1px black;
+    border-collapse: collapse;
+}       
+
+td{
+    border: solid 1px gray;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    color: red;
+}
+
+th{
+    border: solid 1px gray;
+    width: 50px;
+    height: 50px;
+}
+
+table tr:nth-child(2n+1) td:nth-child(2n),
+table tr:nth-child(2n) td:nth-child(2n+1)
+{
+    background-color: gray;
+}
+
+table {
+    counter-reset: contaTR -1 contaTD 0;
+    
+}
+
+tr{
+    counter-reset: contaTD 0;
+    counter-increment: contaTR 1;
+}
+
+td{
+    counter-increment: contaTD 1;
+}
+td:after{
+    content: counter(contaTR,upper-alpha) '-' counter(contaTD) ;
+}

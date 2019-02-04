@@ -1,0 +1,26 @@
+
+/* 
+    Created on : 30-gen-2019, 16.47.37
+    Author     : tss
+*/
+
+#im1{
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    transition: all 2s;
+    opacity: 1;
+}
+
+#im2{
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    transition: all 2s;
+    opacity: 1;
+}
+
+#im2:hover{
+    transform: rotateX(90deg);
+    /*filter*/
+}

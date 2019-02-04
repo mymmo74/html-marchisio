@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Immagini e Tabelle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <table border="1">
+            <caption>Esempio di utilizzo immagini dentro una tabella</caption>
+            <tr>
+                <td>Immagine 1</td>
+                <td>
+                    <img src="Paesaggio1.jpg" alt="paesaggio" width="200">
+                </td>
+            </tr>
+            <tr>
+                <td>Immagine 2</td>
+                <td>
+                    <img src="Paesaggio2.jpg" alt="paesaggio" width="200">
+                </td>
+            </tr>
+            <tr>
+                <td>Immagine 3</td>
+                <td>
+                    <!--<img src="Paesaggio3.jpg" alt="paesaggio" width="200"> -->
+                <picture>
+                    <source media="(min-width:1300px)" srcset="Paesaggio1.jpg">
+                    <source media="(min-width:800px)" srcset="Paesaggio2.jpg">
+                    <img src="Paesaggio3.jpg" alt="paesaggio" width="200">
+                </picture>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

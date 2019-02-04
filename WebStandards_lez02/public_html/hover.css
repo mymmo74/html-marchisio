@@ -1,0 +1,21 @@
+/* 
+    Created on : 21-gen-2019, 14.27.27
+    Author     : tss
+*/
+
+ol li:hover{
+    background-color: green;
+    color: gray;
+}
+ol li{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+    width: 200px;
+    border: solid 1px red;
+    overflow: visible;
+    /*vi sono 10 pixel esternamente in ogni direzione dell'elemento ol*/
+    margin: 10px;
+    /*Vi sono 20 pixel internamente in ogni direzione dell'elemento ol*/
+    padding: 20px;
+}

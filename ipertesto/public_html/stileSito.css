@@ -1,0 +1,28 @@
+a{
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+/*quando si clicca*/
+a:active{
+    border-radius: 20px;
+    border: solid 1px magenta;
+}
+
+a:hover{
+    text-decoration: underline overline red;
+    background-color: white;
+    color:red;
+}
+
+/*link già visitati*/
+a:visited{
+    font-style: italic;
+}
+
+a:focus{
+    outline: dashed 3px black;
+}

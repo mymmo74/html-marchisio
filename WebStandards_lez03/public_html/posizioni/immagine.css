@@ -1,0 +1,18 @@
+
+/* 
+    Created on : 30-gen-2019, 16.22.03
+    Author     : tss
+*/
+
+#immagine1{
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    transition: all 2s;
+    transform-origin: left top;
+}
+
+#immagine1:hover{
+    /*transform: rotate(100deg);*/
+    transform: rotate3d(1,-5,2.5,50deg);
+}

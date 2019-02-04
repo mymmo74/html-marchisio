@@ -1,0 +1,91 @@
+
+/* 
+    Created on : 28-gen-2019, 11.43.04
+    Author     : mymmo74
+*/
+table{
+    border: solid 1px black;
+    border-collapse: collapse;
+    text-align: center;
+}       
+
+td{
+    border: solid 1px gray;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+tr:nth-child(1) td{
+    counter-increment: t 1;
+}
+
+tr:nth-child(1) td:after{
+    content: counter(t);
+}
+
+tr:nth-child(2) td{
+    counter-increment: t 2;
+}
+
+tr:nth-child(2) td:after{
+    content: counter(t);
+}
+
+tr:nth-child(3) td{
+    counter-increment: t 3;
+}
+
+tr:nth-child(3) td:after{
+    content: counter(t);
+}
+tr:nth-child(4) td{
+    counter-increment: t 4;
+}
+
+tr:nth-child(4) td:after{
+    content: counter(t);
+}
+tr:nth-child(5) td{
+    counter-increment: t 5;
+}
+
+tr:nth-child(5) td:after{
+    content: counter(t);
+}
+tr:nth-child(6) td{
+    counter-increment: t 6;
+}
+
+tr:nth-child(6) td:after{
+    content: counter(t);
+}
+tr:nth-child(7) td{
+    counter-increment: t 7;
+}
+
+tr:nth-child(7) td:after{
+    content: counter(t);
+}
+tr:nth-child(8) td{
+    counter-increment: t 8;
+}
+
+tr:nth-child(8) td:after{
+    content: counter(t);
+}
+tr:nth-child(9) td{
+    counter-increment: t 9;
+}
+
+tr:nth-child(9) td:after{
+    content: counter(t);
+}
+tr:nth-child(10) td{
+    counter-increment: t 10;
+}
+
+tr:nth-child(10) td:after{
+    content: counter(t);
+}

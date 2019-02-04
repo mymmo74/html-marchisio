@@ -1,0 +1,64 @@
+/* 
+    Created on : 21-gen-2019, 14.50.06
+    Author     : tss
+*/
+
+
+table.forza4 td{
+    border: solid 1px gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/*indicando la pseudoclasse hover gli si dice l'elemento che passi sopra*/
+/*table:nth-child(1) tr:hover td:hover{
+    background-color: black;
+    Agisce sul bordo esterno
+    outline: solid 12px red;
+}
+
+table:nth-child(2) tr:hover td:hover{
+    background-color: red;
+    border-radius: 50%;
+}*/
+
+table.forza4{
+    border: solid 1px gray;
+    display: inline-block;
+    border-spacing: 10px;
+    background-color: blue;
+    border-radius: 30px;
+}
+
+table td:nth-child(2n):hover{
+    background-color: red;
+}
+
+table td:nth-child(2n+1):hover{
+    background-color: yellow;
+}
+
+#blocco1 {
+    width: 200px;
+    height: 80px;
+    border: solid 1px red;
+    background-color: blue;
+    border-radius: 30px;
+    /* i primi due parametri indicano lo spostamento dell'ombra (il primo su asse y e il secondo su asse x)
+    il terzo parametro indica la sfumatura */
+    box-shadow: 5px 5px 15px green;
+}
+
+#blocco2 {
+    width: 50px;
+    height: 50px;
+    border: solid 1px red;
+    margin: 10px;
+    background-color: blue;
+    /* mettendo la metà delle dimensioni ottengo un cerchio */
+    /*la stessa cosa la ottengo anche se metto il valore in %*/
+    /*border-radius: 50%;*/
+    border-radius: 25px;
+}

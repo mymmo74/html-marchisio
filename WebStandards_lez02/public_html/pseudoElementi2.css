@@ -1,0 +1,30 @@
+/* 
+    Created on : 21-gen-2019, 16.32.07
+    Author     : tss
+*/
+
+span.nota {
+    background-color: yellow;
+    font-style: italic;
+    padding: 0px 0px;
+}
+
+span.nota:after {
+    content: '(' attr(num) ')';
+    font-size: 8px;
+    padding: 0px 5px;
+    vertical-align: super;
+    font-style: normal;
+    font-weight: bold;
+    color: yellow;
+    text-decoration: none;
+}
+
+span.nota:hover:after{
+    color:black;
+    text-decoration: line-through;
+}
+
+span.nota:hover {
+    text-decoration: underline overline;
+}
