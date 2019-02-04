@@ -44,6 +44,9 @@ document.querySelector(".pOk").onclick = function (){
         indice=0;
     }
     document.body.style.backgroundColor=coloriSfondo[indice];
+    
+//    Con la linea commentata seguente si fa quello scritto sopra con una riga sola
+//    document.querySelector("body").style.bachgroundColor=coloriSfondo[indice++ % coloriSfondo.length];
     console.log(indice);
 };
 
