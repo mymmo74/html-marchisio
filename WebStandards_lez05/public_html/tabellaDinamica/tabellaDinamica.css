@@ -1,0 +1,108 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11-feb-2019, 13.06.04
+    Author     : tss
+*/
+
+#tabella1{
+    border: solid 5px brown;
+    /*Ha solo senso a livello di table*/
+    /*Indicando il valore "collapse" i bordi non vengono separati*/
+    /*automaticamente viene ignorata la proprietà border-spacing*/
+    border-collapse: collapse;
+    border-spacing: 0px 0px;
+}
+
+#tabella2{
+    border: solid 1px black;
+    /*Ha solo senso a livello di table*/
+    /*Indicando il valore "collapse" i bordi non vengono separati*/
+    /*automaticamente viene ignorata la proprietà border-spacing*/
+    border-collapse: collapse;
+    border-spacing: 0px 0px;
+}
+
+#tabella1 td{
+    background-color: white;
+    border: solid 1px black;
+    width: 30px;
+    height: 30px;
+    /*per indicare lo stile del font in grassetto*/
+    font-weight: bold;
+    /*colore del testo*/
+    color: white;
+    /*per allineare nella cella il contenuto*/
+    text-align: center;
+    /*ha senso solo per il td*/
+    vertical-align: top;
+}
+
+#tabella2 td{
+
+    background-color: white;
+    border: solid 1px black;
+    width: 10px;
+    height: 10px;
+    /*per indicare lo stile del font in grassetto*/
+    font-weight: bold;
+    /*colore del testo*/
+    color: white;
+    /*per allineare nella cella il contenuto*/
+    text-align: center;
+    /*ha senso solo per il td*/
+    vertical-align: top;
+}
+
+/* fisso a 20 la dimensione degli input box */
+input[type="text"]{
+    width: 20px;
+}
+
+#contenitore{
+    display: flex; /*sul contenitore*/
+    align-items: center; /*allineamento verticale*/
+    justify-content: center; /*allineamento orizzontale*/
+    flex-wrap: wrap; /*a capo automatico*/
+    border:solid 1px red;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+/*
+table#tabella2 tr td:nth-child(2) {
+    background-color: orange;
+    border: solid 2px aqua;
+}
+
+#tabella2 td{
+    width: 50px;
+    height: 50px;
+    border: solid 1px gray;
+}
+
+/*per prendere solo uno specifico tag devo indicare uno specifico attributo al tag (id)
+questo renderà, come regola, più forte di quello generale di td */
+
+/*td#cellaSpeciale {
+    border: dashed 3px blue;
+    font-size: 20px;
+    color:red;
+    background-color: yellow;
+    vertical-align: middle;
+    text-align: center;
+}
+si può fare anche con l'attributo classe' e poi il selettore viene indicato premettendo il punto "."  
+td.giocatore1{
+    border: solid 1px red;
+    background-color: yellowgreen;
+}
+
+td.giocatore2 {
+    border: dotted 1px blue;
+    background-color: goldenrod;
+}*/

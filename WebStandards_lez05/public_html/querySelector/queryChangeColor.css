@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11-feb-2019, 11.19.16
+    Author     : tss
+*/
+
+/*
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+.CambiaColore{
+    border-radius: 30px;
+    border: inset 2px gray;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+#contenitore{
+    display: flex; /*sul contenitore*/
+    align-items: center; /*allineamento verticale*/
+    justify-content: center; /*allineamento orizzontale*/
+    flex-wrap: wrap; /*a capo automatico*/
+    border:solid 1px red;
+    position: fixed;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
