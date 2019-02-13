@@ -6,15 +6,15 @@
 
 
 /***
- * 
- * @param {type} righe
- * @param {type} colonne
- * @param {type} id
- * @param {type} classe
+ * Genera una tabella specificata nei parametri
+ * @param {int} righe
+ * @param {int} colonne
+ * @param {string} id
+ * @param {string} classe
  * @returns {String}
  */function generaTabHtml(righe, colonne, id, classe) {
     let ret = "<table ";
-
+    
     if (id !== "") {
         ret += 'id="' + id + '" ';
     }

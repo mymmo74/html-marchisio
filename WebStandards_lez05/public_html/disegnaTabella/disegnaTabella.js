@@ -72,6 +72,6 @@ function programmaClickTavolozza() {
     document.querySelectorAll("#tavolozza td").forEach(function (elm, k) {
         elm.onclick=function(){
             coloreSelezionato=elm.style.backgroundColor;
-        }
+        };
     });
 }
