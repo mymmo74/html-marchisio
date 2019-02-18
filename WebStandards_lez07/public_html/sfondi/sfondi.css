@@ -1,0 +1,22 @@
+/* 
+    Created on : 18-feb-2019, 8.39.28
+    Author     : tss
+*/
+
+div#prova {
+    /* è possibile assegnare più sfondi dividendoli con la virgola */
+    background-image: url(sole.gif),url(moneta.jpg);
+    width: 800px;
+    height: 500px;
+    background-position: top left;
+    background-repeat: no-repeat no-repeat,repeat;
+    /*background-size: 389px;*/
+    border: solid 1px red;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+}
