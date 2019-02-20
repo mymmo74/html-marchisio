@@ -1,0 +1,53 @@
+
+/* 
+    Created on : 20-feb-2019, 13.30.16
+    Author     : tss
+*/
+
+.quadrante{
+    width: 400px;
+    height: 400px;
+    background-color: bisque;
+    border: solid 1px black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+    
+.lancetta{
+    width: 4px;
+    height: 189px;
+    position: absolute;
+    top: 10px;
+    left: 199px;
+    /*margin: -1px;*/
+    border: solid 1px black;
+    transform-origin: 50% 100%;
+    animation-name: spostamento;
+    /*durata dell'animazione*/
+    animation-duration: 6s;
+    /*numero di volte della spostamento*/
+    animation-iteration-count: 5;
+    /*la direzione dell'animazione*/
+    animation-direction: normal;
+    /*modalità dell'animazione*/
+    animation-timing-function: linear;
+    border-top-left-radius: 50%; 
+    border-top-right-radius: 50%;
+    animation-play-state: paused;
+}
+
+.quadrante:hover .lancetta{
+    animation-play-state: running;
+}
+
+
+/*si da un nome al frame, es "spostamento"
+poi definisco i frame principali nel nostro caso abbiamo messo */
+@keyframes spostamento {
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}

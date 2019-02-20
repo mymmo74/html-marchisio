@@ -1,0 +1,236 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-feb-2019, 20.50.02
+    Author     : utente
+*/
+body {
+    font-size: 100%;
+}
+.prospettiva {
+    height: 9em;
+    left: 50%;
+    margin: -7.5em;
+    position: absolute;
+    top: 50%;
+    transform: perspective(500px) rotateX(45deg) rotateZ(45deg);
+    transform-style: preserve-3d;
+    transition: 1s;
+    width: 9em;
+}
+.cubo,
+.cubo:after,
+.cubo:before {
+    box-shadow: inset 0 0 0 .25em hsla(0,0%,0%,.1);
+    content: '';
+    float: left;
+    height: 3em;
+    position: absolute;
+    width: 3em;
+}
+
+.cubo {
+    background-color: aqua;
+    position: relative;
+    transform: rotateZ(0deg) translateZ(3em);
+    transform-style: preserve-3d;
+    transition: .25s;
+}
+.cubo:after {
+    background-color: aqua;
+    transform: rotateX(-90deg) translateY(3em);
+    transform-origin: 100% 100%;
+}
+.cubo:before {
+    background-color: aqua;
+    transform: rotateY(90deg) translateX(3em);
+    transform-origin: 100% 0;
+}
+
+.cubo:nth-child(even) {
+    background-color: red;
+}
+.cubo:nth-child(even):after {
+    background-color: red;
+}
+.cubo:nth-child(even):before {
+    background-color: red;
+}
+@keyframes wave {
+    50% { transform: translateZ(4.5em); }
+}
+.cubo:nth-child(1) {
+    animation: wave 2s .1s ease-in-out infinite;
+}
+.cubo:nth-child(2) {
+    animation: wave 2s .2s ease-in-out infinite;
+}
+.cubo:nth-child(3) {
+    animation: wave 2s .3s ease-in-out infinite;
+}
+.cubo:nth-child(4) {
+    animation: wave 2s .4s ease-in-out infinite;
+}
+.cubo:nth-child(5) {
+    animation: wave 2s .5s ease-in-out infinite;
+}
+.cubo:nth-child(6) {
+    animation: wave 2s .6s ease-in-out infinite;
+}
+.cubo:nth-child(7) {
+    animation: wave 2s .7s ease-in-out infinite;
+}
+.cubo:nth-child(8) {
+    animation: wave 2s .8s ease-in-out infinite;
+}
+.cubo:nth-child(9) {
+    animation: wave 2s .9s ease-in-out infinite;
+}
+.prospettiva1 {
+    height: 9em;
+    left: 75%;
+    margin: -7.5em;
+    position: absolute;
+    top: 40%;
+    transform: perspective(500px) rotateX(45deg) rotateZ(45deg);
+    transform-style: preserve-3d;
+    transition: 1s;
+    width: 9em;
+}
+.cubo1,
+.cubo1:after,
+.cubo1:before {
+    box-shadow: inset 0 0 0 .25em hsla(0,0%,0%,.1);
+    content: '';
+    float: left;
+    height: 3em;
+    position: absolute;
+    width: 3em;
+}
+
+.cubo1 {
+    background-color: black;
+    position: relative;
+    transform: rotateZ(0deg) translateZ(3em);
+    transform-style: preserve-3d;
+    transition: .25s;
+}
+.cubo1:after {
+    background-color: black;
+    transform: rotateX(-90deg) translateY(3em);
+    transform-origin: 100% 100%;
+}
+.cubo1:before {
+    background-color: black;
+    transform: rotateY(90deg) translateX(3em);
+    transform-origin: 100% 0;
+}
+
+.cubo1:nth-child(even) {
+    background-color: lawngreen;
+}
+.cubo1:nth-child(even):after {
+    background-color: lawngreen;
+}
+.cubo1:nth-child(even):before {
+    background-color: lawngreen;
+}
+@keyframes wave {
+    50% { transform: translateZ(10em); }
+}
+.cubo1:nth-child(1) {
+    animation: wave 2s .1s ease-in-out infinite;
+}
+.cubo1:nth-child(3) {
+    animation: wave 2s .1s ease-in-out infinite;
+}
+.cubo1:nth-child(5) {
+    animation: wave 2s .1s ease-in-out infinite;
+}
+.cubo1:nth-child(7) {
+    animation: wave 2s .1s ease-in-out infinite;
+}
+.cubo1:nth-child(9) {
+    animation: wave 2s .1s ease-in-out infinite;
+}
+@keyframes wave1 {
+    50% { transform: translateY(6em); }
+}
+.cubo1:nth-child(2) {
+    animation: wave1 2s .3s ease-in-out infinite;
+}
+.cubo1:nth-child(4) {
+    animation: wave1 2s .3s ease-in-out infinite;
+}
+.cubo1:nth-child(6) {
+    animation: wave1 2s .3s ease-in-out infinite;
+}
+.cubo1:nth-child(8) {
+    animation: wave1 2s .3s ease-in-out infinite;
+}
+.titolo{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+.direzione{
+    width:30px;
+    
+    border: inset 2px aquamarine;
+    
+    line-height: 30px;
+}
+
+.pulsante:active{
+    border: outset 2px aquamarine;
+}
+
+.nord{
+    left: 80px;
+    bottom: 110px
+}
+
+.sud{
+    left: 80px;
+    bottom: 50px;
+}
+.ovest{
+    left: 50px;
+    bottom: 80px;
+}
+
+.est{
+    left: 110px;
+    bottom: 80px;
+}
+
+.contenitore{
+    position: relative;
+    height: 230px;
+    width: 200px;
+    border: solid 2px blue;
+    box-shadow: 5px 5px 5px aqua;
+    border-radius: 10px;
+}
+
+.contenitore div{
+    position: absolute;
+    border: solid 1px aquamarine;
+    text-align: center;
+    box-shadow: 2px 2px 2px aquamarine;
+}
+
+.pulsante{
+    border-radius: 5px;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    
+}

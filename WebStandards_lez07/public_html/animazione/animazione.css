@@ -1,0 +1,104 @@
+
+/* 
+    Created on : 20-feb-2019, 13.30.16
+    Author     : tss
+*/
+
+.pallina{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: spostamento;
+    /*durata dell'animazione*/
+    animation-duration: 6s;
+    /*numero di volte della spostamento*/
+    animation-iteration-count: infinite;
+    /*la direzione dell'animazione*/
+    animation-direction: normal;
+    /*modalità dell'animazione*/
+    animation-timing-function: linear;
+}
+
+.pallina:nth-child(1){
+    background-color: yellow;
+    /*durata dell'animazione*/
+    animation-delay: 1s;
+}
+.pallina:nth-child(2){
+    background-color: green;
+    /*durata dell'animazione*/
+    animation-delay: 1s;
+}
+.pallina:nth-child(3){
+    background-color: red;
+    /*durata dell'animazione*/
+    animation-delay: 2s;
+}
+.pallina:nth-child(4){
+    background-color: aqua;
+    /*durata dell'animazione*/
+    animation-delay: 2s;
+}
+.pallina:nth-child(5){
+    background-color: black;
+    /*durata dell'animazione*/
+    animation-delay: 3s;
+}
+.pallina:nth-child(6){
+    background-color: blueviolet;
+    /*durata dell'animazione*/
+    animation-delay: 3s;
+}
+.pallina:nth-child(7){
+    background-color: chartreuse;
+    /*durata dell'animazione*/
+    animation-delay: 4s;
+}
+.pallina:nth-child(8){
+    background-color: cyan;
+    /*durata dell'animazione*/
+    animation-delay: 4s;
+}
+.pallina:nth-child(9){
+    background-color: darkgoldenrod;
+    /*durata dell'animazione*/
+    animation-delay: 5s;
+}
+.pallina:nth-child(10){
+    background-color: darkorchid;
+    /*durata dell'animazione*/
+    animation-delay: 5s;
+}
+
+/*usando la pseudoclasse hover
+passandoci sopra con il mouse si pausa
+l'animazione*/
+.pallina:hover{
+    animation-play-state: paused;
+    z-index: 0;
+}
+
+/*si da un nome al frame, es "spostamento"
+poi definisco i frame principali nel nostro caso abbiamo messo */
+@keyframes spostamento {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        left: 300px;
+        top: 0px;
+    }
+    50% {
+        left: 300px;
+        top: 400px;
+    }
+    75% {
+        left: 100px;
+        top: 400px;
+    }
+}

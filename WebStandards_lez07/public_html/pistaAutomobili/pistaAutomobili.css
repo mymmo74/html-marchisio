@@ -1,0 +1,68 @@
+
+/* 
+    Created on : 20-feb-2019, 16.16.06
+    Author     : tss
+*/
+
+.auto{
+    position: absolute;
+}
+
+.nera{
+    left:100px;
+    top: 100px;
+    animation-name: spostaNera;
+    /*durata dell'animazione*/
+    animation-duration: 6s;
+    /*numero di volte della spostamento*/
+    animation-iteration-count: 1;
+    /*la direzione dell'animazione*/
+    animation-direction: normal;
+    /*modalità dell'animazione*/
+    animation-timing-function: linear;
+}
+
+.rossa{
+    top: 200px;
+    left:0px;
+}
+
+
+@keyframes spostaNera {
+    0% {
+        left: 100px;
+        top: 100px;
+        transform: rotate(0deg);
+    }
+    25% {
+        left: 200px;
+        top: 100px;
+        transform: rotate(0deg);
+    }
+    50% {
+        left: 300px;
+        top: 100px;
+        transform: rotate(45deg);
+    }
+    75% {
+        left: 400px;
+        top: 150px;
+        transform: rotate(90deg);
+    }
+    78%{
+        left: 300px;
+        top: 150px;
+        transform: rotate(110deg);
+    }
+    80%{
+        left: 200px;
+        top: 100px;
+        transform: rotate(110deg);
+    }
+    
+    100% {
+        left: 100px;
+        top: 100px;
+        transform: rotate(0deg);
+    }
+}
