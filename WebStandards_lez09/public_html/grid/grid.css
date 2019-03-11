@@ -1,0 +1,71 @@
+
+/* 
+    Created on : 11-mar-2019, 8.27.32
+    Author     : tss
+*/
+
+div{
+    border: solid 1px black;
+}
+
+div:before{
+    content :attr(class);
+    color: black;
+    position: absolute;
+    font-size: 20px;
+}
+#contenitore{
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-color: red;
+    display: grid;
+    /*modello di come sono composte le righe nella griglia
+    ogni valore indica una riga. Si può mettere in % o in px*/
+    grid-template-rows: 10% 80% 10%;
+    /*modello di come sono composte le colonne nella griglia
+    ogni valore indica una colonna.
+    Si possono tenere sia valori in % che in px (per indicare una parte sempre fissa).
+    Con "auto" posso lasciar fare al browser. In generale significa il massimo possibile*/
+    grid-template-columns: 25% 70% 5%;
+    /*equivalente del border spacing di una tabella*/
+    grid-gap: 1px 1px;
+}
+
+.intestazione{
+    /*riga 1*/
+    background-color: green;
+    grid-row:1;
+    /*i due valori seguenti servono per dirgli da dove inizia
+    e per quanto posto deve occupare
+    cioè quando inizia e quando finisce*/
+    grid-column-start:1;
+    grid-column-end: span 3;
+    /*sintassi alternativa:
+    grid-column: 1 / span 3;    */
+}
+
+.centrale{
+    /*indicazione della posizione*/
+    background-color: red;
+    grid-row:2;
+    grid-column:2;
+}
+
+.piePagina{
+    background-color: yellow;
+    grid-row:3;
+    grid-column:1 / 4;
+}
+
+.latodx{
+    background-color: orangered;
+    grid-row:2;
+    grid-column:3;
+}
+
+.latosx{
+    background-color: lightseagreen;
+    grid-row:2;
+    grid-column:1;
+}

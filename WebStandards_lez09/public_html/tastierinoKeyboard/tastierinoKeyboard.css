@@ -1,0 +1,163 @@
+
+/* 
+    Created on : 11-mar-2019, 9.19.23
+    Author     : tss
+*/
+
+div{
+    border: solid 1px black;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#schermo {
+  border: solid 1px blue;
+  background-color: cyan;
+  border-radius: 20px;
+  width: 95%;
+  height: 100px;
+  padding: 10px;
+  margin: 20px 0px;
+  font-size: 20px;
+}
+
+
+#tastierino{
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-color: red;
+    display: grid;
+    /*modello di come sono composte le righe nella griglia
+    ogni valore indica una riga. Si può mettere in % o in px*/
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    /*modello di come sono composte le colonne nella griglia
+    ogni valore indica una colonna.
+    Si possono tenere sia valori in % che in px (per indicare una parte sempre fissa).
+    Con "auto" posso lasciar fare al browser. In generale significa il massimo possibile*/
+    grid-template-columns: 25% 25% 25% 25%;
+    /*equivalente del border spacing di una tabella*/
+    grid-gap: 1px 1px;
+}
+
+#tastierino div{
+    background-color: black;
+    display: flex;
+    /*giustificazione orizzontale*/
+    justify-content: center;
+    /*giustificazione orizzontale per stringa che va a capo*/
+    text-align: center;
+    /*giustificazione verticale*/
+    align-items: center;
+    
+}
+
+.blocNum{
+    /*riga 1*/
+    grid-row:1;
+    grid-column:1;
+}
+
+.diviso{
+    /*riga 1*/
+    grid-row:1;
+    grid-column:2;
+    
+}
+
+.per{
+    /*riga 1*/
+    grid-row:1;
+    grid-column:3;
+    
+}
+
+.meno{
+    /*riga 1*/
+    grid-row:1;
+    grid-column:4;
+}
+
+.n7{
+    /*riga 2*/
+    grid-row:2;
+    grid-column:1;
+}
+
+.n8{
+    /*riga 2*/
+    grid-row:2;
+    grid-column:2;
+}
+
+.n9{
+    /*riga 2*/
+    grid-row:2;
+    grid-column:3;
+}
+
+.piu{
+    /*riga 2*/
+    grid-row-start:2;
+    grid-row-end:span 2;
+    grid-column:4;
+}
+
+.n4{
+    /*riga 3*/
+    grid-row:3;
+    grid-column:1;
+}
+
+.n5{
+    /*riga 3*/
+    grid-row:3;
+    grid-column:2;
+}
+
+.n6{
+    /*riga 3*/
+    grid-row:3;
+    grid-column:3;
+}
+
+.n1{
+    /*riga 4*/
+    grid-row:4;
+    grid-column:1;
+}
+
+.n2{
+    /*riga 4*/
+    grid-row:4;
+    grid-column:2;
+}
+
+.n3{
+    /*riga 4*/
+    grid-row:4;
+    grid-column:3;
+}
+
+.invio{
+    /*riga 4*/
+    grid-row-start:4;
+    grid-row-end:span 2;
+    grid-column:4;
+}
+
+.n0{
+    /*riga 5*/
+    grid-row: 5;
+    grid-column-start:1;
+    grid-column-end:span 2;
+}
+
+.canc{
+     /*riga 4*/
+    grid-row:5;
+    grid-column:3;
+}
+
+
