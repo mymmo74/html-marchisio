@@ -1,0 +1,27 @@
+[
+    {
+        "cognome": "Rossi",
+        "nome": "Luigi",
+        "email": "l.rossi@emai.it"
+    },
+    {
+        "cognome": "Bianchi",
+        "nome": "Franca",
+        "email": "f.bianchi@libero.it"
+    },
+    {
+        "cognome": "Verdi",
+        "nome": "Anselmo",
+        "email": "a.verdi@gmail.com"
+    },
+    {
+        "cognome": "Grigi",
+        "nome": "Furio",
+        "email": "f.grigi@gmail.com"
+    },
+    {
+        "cognome": "Gialli",
+        "nome": "Bianca",
+        "email": "b.gialli@gmail.com"
+    }
+]
