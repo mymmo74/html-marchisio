@@ -18,12 +18,12 @@ function creaElencoPuntato(oggJson) {
         elenco.append(punto);
         punto.append(elenco2);
         elenco2.append(punto2);
-        elenco2.append(punto3)
+        elenco2.append(punto3);
 
-        document.body.append(elenco)
-    })
+        document.body.append(elenco);
+    });
 }
 
-creaElencoPuntato(j)
+creaElencoPuntato(j);
 
 

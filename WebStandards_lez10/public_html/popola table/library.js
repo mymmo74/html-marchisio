@@ -8,7 +8,7 @@
  * @returns {undefined}
  */
 
-function creaTabellaDaJson(oggJson, listaCampi, idTabella, classeTabella, contenitore="body") {
+function ddcreaTabellaDaJson(oggJson, listaCampi, idTabella, classeTabella, contenitore="body") {
     let tabella = document.createElement("table");
     tabella.id = idTabella;
     tabella.className = classeTabella;
