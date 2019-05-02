@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29-apr-2019, 8.54.30
+    Author     : tss
+*/
+/*definisco delle dimensioni (250px e 3 righe) tutto quello che non ci sta
+dentro viene chiamato overflow*/
+textarea{
+    width: 250px;
+    /*3 righe di testo*/
+    height: 3em;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid 1px blue;
+    overflow: auto;
+    /*mi considera gli spazi e non va automaticamente a capo (solo quando premo invio)*/
+    white-space: pre;
+        
+}
+
+input[type="text"]{
+    width: 200px;
+    color: red;
+    height: 20px;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: solid 1px blue;
+    border-radius: 10px;
+    background-color: yellow;
+    text-transform: uppercase;
+}
+
+
+/*posso trasformare un oggetto in linea in un oggetto di tipo blocco e
+quindi gli posso dare una dimensione, cosa che non è permessa con gli oggetti in linea*/
+label{
+    display: inline-block;
+    width: 100px;
+    cursor: pointer;
+    margin-right: 50px;
+    text-transform: capitalize;
+}

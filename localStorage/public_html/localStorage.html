@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="localStorage.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body onload="Carica()" >
+        <div>
+            <!--ComboBox-->
+            <label for="optNota">Scegli nota:</label>
+            <select id="optNota" name="optNota">
+                
+            </select>
+        </div>
+        <br/>
+        <div>
+            <label for="titolo">Titolo:</label>
+            <input type="text"
+                   name="titolo" id="titolo"
+                   placeholder="scrivi un titolo"
+                   onkeyup="Salva()"/>
+        </div>
+        <br/>
+        <div>
+            <label for="note">Note:</label>
+            <textarea id="note" name="note"
+                      placeholder="inserisci note"
+                      onkeyup="Salva()">
+
+            </textarea>
+        </div>
+        <br/>
+        <div>
+            <input type="button"
+                   name="conferma" id="conferma"
+                   value="Salva nota"
+                   onclick="Salva()"
+                   />
+        </div>
+        <script src="localStorage.js" type="text/javascript"></script>
+    </body>
+</html>

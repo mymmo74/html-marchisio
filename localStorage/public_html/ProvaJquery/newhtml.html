@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery.js" type="text/javascript"></script>
+        <script src="jquery-ui.js" type="text/javascript"></script>
+        <link href="jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <link href="jquery-ui.structure.css" rel="stylesheet" type="text/css"/>
+        <link href="jquery-ui.theme.css" rel="stylesheet" type="text/css"/>
+        <script>
+            $(function () {
+                $("#dialog-confirm").dialog({
+                    resizable: false,
+                    height: "auto",
+                    width: 400,
+                    modal: true,
+                    buttons: {
+                        "Si grazie": function () {
+                            $(this).dialog("close");
+                        },
+                        Cancel: function () {
+                            $(this).dialog("close");
+                        }
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="dialog-confirm" title="Vuoi una bottiglia di vino?">
+            <p><span class="ui-icon ui-icon-key" style="float:left; margin:12px 12px 20px 0;"></span>Questa è una cantina sociale, mica na piola qualunque</p>
+        </div>
+
+    </body>
+    <script src="provaJquery.js" type="text/javascript"></script>
+</html>
